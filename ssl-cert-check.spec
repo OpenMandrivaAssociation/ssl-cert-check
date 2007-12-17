@@ -8,7 +8,6 @@ URL:		http://prefetch.net/code/ssl-cert-check.html
 Source0:	http://prefetch.net/code/ssl-cert-check.bz2
 Patch0:		ssl-cert-check-3.3-mdv_conf.diff
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 ssl-cert-check is a utility for checking the expiration date of an X.509
