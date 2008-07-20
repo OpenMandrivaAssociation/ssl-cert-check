@@ -1,14 +1,14 @@
 Summary:	SSL certificate expiration checker
 Name:		ssl-cert-check
 Version:	3.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	BSD-like
 Group:		Monitoring
 URL:		http://prefetch.net/code/ssl-cert-check.html
 Source0:	http://prefetch.net/code/ssl-cert-check.bz2
 Patch0:		ssl-cert-check-3.3-mdv_conf.diff
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 ssl-cert-check is a utility for checking the expiration date of an X.509
@@ -24,13 +24,13 @@ bzcat %{SOURCE0} > %{name}
 %build
 
 %install
-[ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{_bindir}
 install -m0755 %{name} %{buildroot}%{_bindir}/%{name}
 
 %clean
-[ -n "%{buildroot}" -a "%{buildroot}" != / ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
