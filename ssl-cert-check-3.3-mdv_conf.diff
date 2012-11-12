@@ -1,0 +1,22 @@
+--- ssl-cert-check	2006-08-22 15:49:07.000000000 +0200
++++ ssl-cert-check.oden	2006-08-22 15:48:40.000000000 +0200
+@@ -107,14 +107,14 @@
+ ALARM="FALSE"
+ 
+ # Location of system binaries
+-AWK="/usr/bin/awk"
++AWK="/bin/gawk"
+ DATE="/bin/date"
+-GREP="/usr/bin/grep"
+-MAIL="/usr/bin/mail"
++GREP="/bin/grep"
++MAIL="/bin/mail"
+ OPENSSL="/usr/bin/openssl"
+ PRINTF="/usr/bin/printf"
+-SED="/usr/bin/sed"
+-MKTEMP="/usr/bin/mktemp"
++SED="/bin/sed"
++MKTEMP="/bin/mktemp"
+ 
+ # Place to stash temporary files
+ CERT_TMP=$($MKTEMP  /var/tmp/cert.XXXXXX)
