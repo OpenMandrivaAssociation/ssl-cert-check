@@ -1,7 +1,7 @@
 Summary:	SSL certificate expiration checker
 Name:		ssl-cert-check
-Version:	3.3
-Release:	4
+Version:	4.10
+Release:	1
 License:	BSD-like
 Group:		Monitoring
 URL:		http://prefetch.net/code/ssl-cert-check.html
