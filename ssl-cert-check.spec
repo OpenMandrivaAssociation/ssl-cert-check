@@ -1,6 +1,6 @@
 Summary:	SSL certificate expiration checker
 Name:		ssl-cert-check
-Version:	4.10
+Version:	4.11
 Release:	1
 License:	BSD-like
 Group:		Monitoring
