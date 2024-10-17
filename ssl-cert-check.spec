@@ -4,7 +4,7 @@ Version:	4.11
 Release:	1
 License:	BSD-like
 Group:		Monitoring
-URL:		http://prefetch.net/code/ssl-cert-check.html
+URL:		https://prefetch.net/code/ssl-cert-check.html
 Source0:	http://prefetch.net/code/ssl-cert-check.bz2
 Patch0:		ssl-cert-check-3.3-mdv_conf.diff
 BuildArch:	noarch
